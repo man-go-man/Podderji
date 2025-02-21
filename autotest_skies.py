@@ -24,8 +24,8 @@ class TestMainPage:
         # auth
         browser.get(link)
         browser.find_element(By.XPATH, "//*[@id=\"skies-app\"]/div/top-menu/div/div/nav/ul/li[4]/a").click()
-        browser.find_element(By.ID, "mat-input-0").send_keys("test-login@mail.com")
-        browser.find_element(By.ID, "mat-input-1").send_keys("WYFo66SVbh!uw#D")
+        browser.find_element(By.ID, "mat-input-0").send_keys("тестовый логин")
+        browser.find_element(By.ID, "mat-input-1").send_keys("тестовый пароль")
         browser.find_element(By.CSS_SELECTOR,"input.login-window__submit-button").click()
         # test_see_3_counters
         time.sleep(1)
